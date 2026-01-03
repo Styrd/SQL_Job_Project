@@ -30,7 +30,7 @@ LIMIT 10;
 
 /*
 Note: We don't have enough data, we only have 7 job listings that includes a salary in Sweden, therefore we need other parameters if we want to analyse job postings in Sweden.
-Therefore we will change the scope to remote jobs and make a new query below.
+On that note we will change the scope to remote jobs and make a new query below.
 */
 
 /*
