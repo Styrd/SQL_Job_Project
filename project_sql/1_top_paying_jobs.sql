@@ -6,14 +6,14 @@ QUESTION: What are the top-paying Data/Business Analyst jobs in Sweden?
 */
 
 SELECT
-    jpf.job_id AS jobb_id,
-    jpf.job_title AS jobbtitel,
-    cd.name AS arbetsgivare,
-    jpf.job_location AS plats,
-    jpf.job_schedule_type AS anställningsform,
-    jpf.job_work_from_home AS hybrid,
-    jpf.salary_year_avg AS medellön_år,
-    jpf.job_posted_date AS publicerad
+    jpf.job_id,
+    jpf.job_title,
+    cd.name AS company_name,
+    jpf.job_location,
+    jpf.job_schedule_type,
+    jpf.job_work_from_home,
+    jpf.salary_year_avg,
+    jpf.job_posted_date
 FROM
     job_postings_fact AS jpf
 LEFT JOIN                                               -- JOINs company_dim to be able to get the company name
@@ -41,13 +41,14 @@ QUESTION: What are the top-paying Data/Business Analyst jobs?
 */
 
 SELECT
-    jpf.job_id AS jobb_id,
-    jpf.job_title AS jobbtitel,
-    cd.name AS arbetsgivare,
-    jpf.job_location AS plats,
-    jpf.job_schedule_type AS anställningsform,
-    jpf.salary_year_avg AS medellön_år,
-    jpf.job_posted_date AS publicerad
+    jpf.job_id,
+    jpf.job_title,
+    cd.name AS company_name,
+    jpf.job_location,
+    jpf.job_schedule_type,
+    jpf.job_work_from_home,
+    jpf.salary_year_avg,
+    jpf.job_posted_date
 FROM
     job_postings_fact AS jpf
 LEFT JOIN                                               -- JOINs company_dim to be able to get the company name
