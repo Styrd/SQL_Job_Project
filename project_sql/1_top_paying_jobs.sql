@@ -29,7 +29,8 @@ ORDER BY
 LIMIT 10;
 
 /*
-Notering: Vi har inte tillräckligt med data för att använda denna eftersom vi är dåliga på att lista lön i Sverige, om vi ska använda Sverige som parameter så måste vi hitta andra ingångsvärden. Vi bör därför skapa en ny frågeställning kring jobb Remote.
+Notering: Vi har inte tillräckligt med data för att använda denna eftersom vi är dåliga på att lista lön i Sverige, om vi ska använda Sverige som parameter så måste vi hitta andra ingångsvärden. 
+Vi bör därför skapa en ny frågeställning kring jobb Remote.
 */
 
 /*
