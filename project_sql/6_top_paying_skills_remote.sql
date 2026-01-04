@@ -20,7 +20,8 @@ INNER JOIN
 WHERE
     (jpf.job_title LIKE '%Data Analyst%' or
     jpf.job_title LIKE '%Business Analyst%') AND
-    jpf.salary_year_avg IS NOT NULL 
+    jpf.salary_year_avg IS NOT NULL AND
+    job_location = 'Anywhere'
 GROUP BY
     skills
 ORDER BY
@@ -28,28 +29,36 @@ ORDER BY
 LIMIT 25;
 
 /*
-Top-Paying Skills for Remote Data & Business Analyst Roles: 
+🌐 Top 3 Insights from Remote Analyst Job Skills
 
-Key Insights
+💻 Full-Stack & Front-End Skills Boost Remote Analyst Salaries
+Skills like CSS, Angular, FastAPI, and Bitbucket suggest top-paying remote roles favor analysts who can interface with product/dev teams and contribute to web-facing data applications.
 
-*   Niche & Backend Skills Command Premium Salaries
-    Tools like Yarn, Couchbase, and Golang suggest top salaries go to analysts with engineering or infrastructure skills — often in hybrid roles.
-*   Cloud & Distributed Systems Expertise Is In Demand
-    High-paying roles value skills in Airflow, Kafka, DynamoDB, and VMware, highlighting a shift toward cloud-first remote data teams.
-*   Proficiency in Remote Collaboration Tools Pays Off
-    Tools like GitLab, Bitbucket, and Notion reflect the need for analysts to work efficiently in distributed, asynchronous environments.
+🤖 Machine Learning & Deep Learning Tools Dominate the Top Tier
+High-paying remote roles often list tools like Keras, PyTorch, TensorFlow, Jupyter, and Pandas, indicating a strong demand for analysts who can support or prototype ML/AI workflows from a distance.
+
+☁️ Cloud-Native & Scalable Data Systems Are Highly Valued
+Tools such as Kafka, Cassandra, Elasticsearch, and Couchbase show that remote analysts are expected to work within or alongside modern, distributed data infrastructure — not just traditional BI stacks.
 
 [
   {
-    "skills": "yarn",
-    "avg_salary_skill": "340000.00"
+    "skills": "bitbucket",
+    "avg_salary_skill": "189154.50"
   },
   {
-    "skills": "dplyr",
-    "avg_salary_skill": "196250.00"
+    "skills": "css",
+    "avg_salary_skill": "185000.00"
+  },
+  {
+    "skills": "keras",
+    "avg_salary_skill": "185000.00"
   },
   {
     "skills": "fastapi",
+    "avg_salary_skill": "185000.00"
+  },
+  {
+    "skills": "angular",
     "avg_salary_skill": "185000.00"
   },
   {
@@ -57,88 +66,80 @@ Key Insights
     "avg_salary_skill": "161750.00"
   },
   {
+    "skills": "watson",
+    "avg_salary_skill": "160515.00"
+  },
+  {
     "skills": "couchbase",
     "avg_salary_skill": "160515.00"
   },
   {
-    "skills": "vmware",
-    "avg_salary_skill": "147500.00"
-  },
-  {
-    "skills": "perl",
-    "avg_salary_skill": "141921.21"
-  },
-  {
-    "skills": "dynamodb",
-    "avg_salary_skill": "140000.00"
-  },
-  {
-    "skills": "twilio",
-    "avg_salary_skill": "138500.00"
-  },
-  {
-    "skills": "datarobot",
-    "avg_salary_skill": "128992.75"
-  },
-  {
-    "skills": "keras",
-    "avg_salary_skill": "127833.33"
-  },
-  {
     "skills": "gitlab",
-    "avg_salary_skill": "127033.78"
+    "avg_salary_skill": "154500.00"
   },
   {
-    "skills": "rust",
-    "avg_salary_skill": "124833.33"
+    "skills": "pyspark",
+    "avg_salary_skill": "150257.50"
   },
   {
-    "skills": "bitbucket",
-    "avg_salary_skill": "124791.33"
+    "skills": "swift",
+    "avg_salary_skill": "147833.33"
   },
   {
-    "skills": "watson",
-    "avg_salary_skill": "121838.33"
-  },
-  {
-    "skills": "airflow",
-    "avg_salary_skill": "117423.37"
-  },
-  {
-    "skills": "angular",
-    "avg_salary_skill": "117212.62"
-  },
-  {
-    "skills": "notion",
-    "avg_salary_skill": "116710.00"
-  },
-  {
-    "skills": "kafka",
-    "avg_salary_skill": "116515.97"
-  },
-  {
-    "skills": "php",
-    "avg_salary_skill": "116507.34"
-  },
-  {
-    "skills": "scala",
-    "avg_salary_skill": "115530.69"
+    "skills": "elasticsearch",
+    "avg_salary_skill": "145000.00"
   },
   {
     "skills": "jupyter",
-    "avg_salary_skill": "114667.13"
+    "avg_salary_skill": "143375.00"
+  },
+  {
+    "skills": "flask",
+    "avg_salary_skill": "142000.00"
   },
   {
     "skills": "pytorch",
-    "avg_salary_skill": "113210.32"
+    "avg_salary_skill": "140000.00"
   },
   {
-    "skills": "node",
-    "avg_salary_skill": "113125.00"
+    "skills": "kafka",
+    "avg_salary_skill": "140000.00"
   },
   {
-    "skills": "confluence",
-    "avg_salary_skill": "112488.16"
+    "skills": "tensorflow",
+    "avg_salary_skill": "140000.00"
+  },
+  {
+    "skills": "cassandra",
+    "avg_salary_skill": "140000.00"
+  },
+  {
+    "skills": "rust",
+    "avg_salary_skill": "138000.00"
+  },
+  {
+    "skills": "numpy",
+    "avg_salary_skill": "137393.75"
+  },
+  {
+    "skills": "linux",
+    "avg_salary_skill": "136507.50"
+  },
+  {
+    "skills": "scala",
+    "avg_salary_skill": "133835.83"
+  },
+  {
+    "skills": "pandas",
+    "avg_salary_skill": "132936.25"
+  },
+  {
+    "skills": "microstrategy",
+    "avg_salary_skill": "130184.63"
+  },
+  {
+    "skills": "zoom",
+    "avg_salary_skill": "129348.00"
   }
 ]
 */
