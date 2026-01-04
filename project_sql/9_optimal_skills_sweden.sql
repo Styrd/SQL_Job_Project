@@ -32,6 +32,10 @@ LIMIT 25;
 /*
 
 Note:
-From the results we can see that the job representation in Sweden with salaries are to low, we noted this in our first query already but I wanted to see if we could get the skills. From my personal experience we are not putting the salaries in the job postings, because we want to negotiate the pay. I am going to make a new project that scans the general demand on skills instead  but I will keep this here for now.
+From the results we can see that the job representation in Sweden with salaries are to low, 
+we noted this in our first query already but I wanted to see if we could get the skills. 
+From my personal experience we are not putting the salaries in the job postings, 
+because we want to negotiate the pay. I am going to make a new project that scans the general 
+demand on skills instead but I will keep this here for now.
 
 */
